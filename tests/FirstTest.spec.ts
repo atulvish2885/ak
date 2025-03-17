@@ -12,7 +12,7 @@ test.describe('Makemytrip Successfully',()=>{
         //await expect(page).toHaveTitle(/Playwright/);
       });
 
-      test.only('Linkedin Automation', async ({ page }) => {
+      test('Linkedin Automation', async ({ page }) => {
         await page.goto('https://www.linkedin.com/');
         await page.locator("//span[normalize-space()='People']").click();
         await expect(page.getByText('Try searching for your co-worker, classmate, professor, or friend.')).toBeVisible();

@@ -16,6 +16,5 @@ test.describe('Makemytrip Successfully',()=>{
         await page.goto('https://www.linkedin.com/');
         await page.locator("//span[normalize-space()='People']").click();
         await expect(page.getByText('Try searching for your co-worker, classmate, professor, or friend.')).toBeVisible();
-      
       });
 })

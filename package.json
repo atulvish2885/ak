@@ -5,10 +5,14 @@
   "main": "index.js",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.10.5"
   },
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "latest-version": "^9.0.0"
+  }
 }

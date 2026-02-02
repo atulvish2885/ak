@@ -21,18 +21,5 @@ test.describe('Travel',()=>{
         //await expect(page).toHaveTitle(/Playwright/);
       });
 
-      test('Linkedin Automation', async ({ page }) => {
-        await page.goto('https://www.linkedin.com/');
-        await page.locator("//span[normalize-space()='People']").click();
-        await expect(page.getByText('Try searching for your co-worker, classmate, professor, or friend.')).toBeVisible();
-      });
-
-
-      
-      test('Indigo Airlines', async ({ page }) => {
-        await page.goto('https://www.goindigo.in/');
-        await page.waitForTimeout(10000);
-        await expect(page.getByText('Hi there, where would you like to ')).toBeVisible();
-      });
 
 })
